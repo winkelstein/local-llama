@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  api_server:
+    build: model_api/
+    command: python -m model_api
+    container_name: model_api
+    restart: always
+    volumes:
+      - ./llama/:/app/llama
+    ports:
+      - 8000:8000
