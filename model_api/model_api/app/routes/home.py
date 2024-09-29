@@ -2,7 +2,7 @@ from fastapi import APIRouter
 from ..llama import llama
 from pydantic import BaseModel
 
-router = APIRouter()
+router: APIRouter = APIRouter()
 
 
 class HomeResponse(BaseModel):

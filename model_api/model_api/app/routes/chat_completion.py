@@ -3,7 +3,7 @@ from ..llama import llama
 from pydantic import BaseModel
 from typing import Literal, List, Dict
 
-router = APIRouter()
+router: APIRouter = APIRouter()
 
 
 class Message(BaseModel):
