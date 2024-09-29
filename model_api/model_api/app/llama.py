@@ -9,7 +9,7 @@ class LlamaModel:
         use_gpu: bool = True,
         verbose: bool = False,
         context_window: int = 2048,
-    ):
+    ) -> None:
         self.use_gpu: bool = use_gpu
         self.context_window: int = context_window
 
